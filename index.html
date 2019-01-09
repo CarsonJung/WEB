@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+*{
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 40px;
+  background: #3ac790;
+}
+
+.header {
+  padding: 50px;
+  font-size: 40px;
+  text-align: center;
+  background: white;
+}
+
+.leftcolumn {
+  float: left;
+  width: 75%;
+}
+
+.rightcolumn {
+  float: right;
+  width: 25%;
+  padding-left: 20px;
+}
+
+.image {
+  background-color: #aaa;
+  width: 100%;
+  padding: 20px;
+}
+
+.card {
+   background-color: white;
+   padding: 20px;
+   margin-top: 20px;
+}
+
+.bottom {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+</head>
+
+<body>
+  <div class="header">
+    <!--<link rel="stylesheet" href="base.css">-->
+    <h2> HTML/CSS로 만든 블로그 </h2>
+  </div>
+
+  <div class="row">
+    <div class="leftcolumn">
+      <div class="card">
+        <h2>1. Vue.js 스터디 시작하다.</h2>
+        <h5>첫번째 Meeting [2019. Jan. 9th]</h5>
+        <div class="image" style="height:200px;">Image</div>
+        <p> Do.it입문서 Day1 | 기본 웹페이지 만들기   </p>
+      </div>
+      <div class="card">
+        <h2>2. Vue.js 첫번째 스터디</h2>
+        <h5>공식 스터디 모임 [2019. Jan. 9th]</h5>
+        <div class="image" style="height:200px;">Image</div>
+        <p>HTML & CSS 독학방법 절실하다.<br />
+        Css선택자 너무 복잡하다. </p>
+      </div>
+    </div>
+    <div class="rightcolumn">
+      <div class="card">
+        <h2>About Me</h2>
+        <div class="image" style="height:100px;">Image</div>
+        <h4>정진혁(1996.12.30)</h4>
+        <p> 중앙대학교 융합공학부 재학 (~2015)</p>
+      </div>
+      <div class="card">
+        <h2>About us</h2>
+        <div class="image" style="height:100px;">Image</div>
+        <h4>웹스터디5형제</h4>
+          <p>  1회 모임 : 신논현 교보문고 (2019.01.04) </p>
+      </div>
+    <div class="card">
+        <h2>Follow</h2>
+        <p>
+  	    Facebook : facebook.com/carsonjung<br>
+  	    E-mail : carson505@naver.com<br />
+        Instagram : @g.nyuk
+        </p>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="bottom">
+    <h2> FeedBack</h2>
+      <p>
+        1. leftcolumn과 rightcolumn의 높이를 맞추고 싶다.<br />
+        2. 창 사이즈를 바꿔도 변동이 덜하도록 세팅하고 싶다. <br />
+
+      </p>
+
+  </div>
